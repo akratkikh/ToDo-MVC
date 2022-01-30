@@ -1,0 +1,127 @@
+body {
+  height: 100vh;
+  background: #fc466b; 
+  background: -webkit-linear-gradient(to right, #fc466b, #3f5efb);
+  background: linear-gradient(to right, #fc466b, #3f5efb); 
+}
+
+header {
+  max-width: 600px;
+  text-align: center;
+  margin: 0px auto 20px auto;
+  padding: 15px;
+  font-size: 30px;
+  font-weight: bold;
+  color: white;
+}
+
+.addTaskInput {
+  width: 70%;
+}
+
+.addButton {
+  background: #fc466b;
+  border: none;
+  border-radius: 10px;
+  width: 70px;
+  height: 40px;
+  color: white;
+}
+
+.addButton:hover {
+  cursor: pointer;
+
+}
+
+.todoList {
+  margin: auto;
+  width: 100%;
+  max-width: 600px;
+  border: 1px solid gray;
+  padding: 15px;
+  border-radius: 5px;
+  background: #ffffffd1;
+}
+
+.todoHeader {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+.todoBody {
+  max-height: 65vh;
+  min-height: 320px;
+  overflow-y: auto;
+  margin-bottom: 20px;
+}
+
+.todoItem {
+  display: flex;
+  position: relative;
+  align-items: self-start;
+  margin-bottom: 15px;
+}
+
+.itemChecked {
+  width: 20px;
+  height: 20px;
+}
+
+.itemChecked:hover {
+  cursor: pointer;
+}
+
+.itemText {
+  margin-left: 20px;
+  font-size: 20px;
+  overflow-wrap: anywhere;
+  max-width: calc(100% - 100px);
+}
+
+.done {
+  text-decoration: line-through;
+}
+
+.close {
+  position: absolute;
+  right: 0px;
+  width: 24px;
+  height: 24px;
+  opacity: 0.3;
+  border: 1px solid red;
+  border-radius: 50%;
+}
+.close:hover {
+  opacity: 1;
+  cursor: pointer;
+}
+.close:before, .close:after {
+  position: absolute;
+  left: 10px;
+  content: ' ';
+  height: 19px;
+  width: 2px;
+  background-color: #333;
+  top: 2px;
+}
+.close:before {
+  transform: rotate(45deg);
+}
+.close:after {
+  transform: rotate(-45deg);
+}
+
+.saveChanges {
+  color: green;
+  font-size: 20px;
+  margin-left: 20px;
+  cursor: pointer;
+}
+
+.dontSaveChanges {
+  color: red;
+  font-size: 20px;
+  margin-left: 20px;
+  cursor: pointer;
+}
