@@ -1,0 +1,23 @@
+{
+  "dependencies": {
+    "fs": "^0.0.1-security",
+    "jest": "^27.4.7"
+  },
+  "name": "todo-mvc",
+  "version": "1.0.0",
+  "main": "script.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/akratkikh/ToDo-MVC.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/akratkikh/ToDo-MVC/issues"
+  },
+  "homepage": "https://github.com/akratkikh/ToDo-MVC#readme",
+  "description": ""
+}
